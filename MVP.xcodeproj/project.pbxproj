@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		95730C1C24AA138700675534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C1B24AA138700675534 /* AppDelegate.swift */; };
 		95730C1E24AA138700675534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C1D24AA138700675534 /* SceneDelegate.swift */; };
-		95730C2024AA138700675534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C1F24AA138700675534 /* ViewController.swift */; };
+		95730C2024AA138700675534 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C1F24AA138700675534 /* MainViewController.swift */; };
 		95730C2324AA138700675534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95730C2124AA138700675534 /* Main.storyboard */; };
 		95730C2524AA138800675534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95730C2424AA138800675534 /* Assets.xcassets */; };
 		95730C2824AA138800675534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95730C2624AA138800675534 /* LaunchScreen.storyboard */; };
 		95730C3324AA138900675534 /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C3224AA138900675534 /* MVPTests.swift */; };
 		95730C3E24AA138900675534 /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C3D24AA138900675534 /* MVPUITests.swift */; };
+		95730C4C24AA13A100675534 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C4B24AA13A100675534 /* Comment.swift */; };
+		95730C4F24AA17CF00675534 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95730C4E24AA17CF00675534 /* MainView.xib */; };
+		95730C5124AA193800675534 /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C5024AA193800675534 /* AssemblyBuilder.swift */; };
+		95730C5524AA32FE00675534 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C5424AA32FE00675534 /* MainPresenterTest.swift */; };
+		95730C5724AB9F2500675534 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C5624AB9F2400675534 /* NetworkService.swift */; };
+		95730C5924ABA86100675534 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C5824ABA86100675534 /* MainPresenter.swift */; };
+		95730C5B24ABA86D00675534 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C5A24ABA86D00675534 /* DetailPresenter.swift */; };
+		95730C5E24ABACAF00675534 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C5C24ABACAF00675534 /* DetailView.swift */; };
+		95730C5F24ABACAF00675534 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95730C5D24ABACAF00675534 /* DetailView.xib */; };
+		95730C6124ACA9AE00675534 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C6024ACA9AE00675534 /* Router.swift */; };
+		95730C6324ADCE2300675534 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95730C6224ADCE2300675534 /* RouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +49,7 @@
 		95730C1824AA138700675534 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95730C1B24AA138700675534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95730C1D24AA138700675534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95730C1F24AA138700675534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95730C1F24AA138700675534 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		95730C2224AA138700675534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95730C2424AA138800675534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95730C2724AA138800675534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		95730C3924AA138900675534 /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95730C3D24AA138900675534 /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		95730C3F24AA138900675534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95730C4B24AA13A100675534 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		95730C4E24AA17CF00675534 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		95730C5024AA193800675534 /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		95730C5424AA32FE00675534 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		95730C5624AB9F2400675534 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		95730C5824ABA86100675534 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		95730C5A24ABA86D00675534 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		95730C5C24ABACAF00675534 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		95730C5D24ABACAF00675534 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		95730C6024ACA9AE00675534 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		95730C6224ADCE2300675534 /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +121,12 @@
 		95730C1A24AA138700675534 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				95730C6024ACA9AE00675534 /* Router.swift */,
+				95730C5624AB9F2400675534 /* NetworkService.swift */,
+				95730C5024AA193800675534 /* AssemblyBuilder.swift */,
 				95730C1B24AA138700675534 /* AppDelegate.swift */,
 				95730C1D24AA138700675534 /* SceneDelegate.swift */,
-				95730C1F24AA138700675534 /* ViewController.swift */,
+				95730C4D24AA177700675534 /* MainModule */,
 				95730C2124AA138700675534 /* Main.storyboard */,
 				95730C2424AA138800675534 /* Assets.xcassets */,
 				95730C2624AA138800675534 /* LaunchScreen.storyboard */,
@@ -113,7 +138,9 @@
 		95730C3124AA138900675534 /* MVPTests */ = {
 			isa = PBXGroup;
 			children = (
+				95730C6224ADCE2300675534 /* RouterTest.swift */,
 				95730C3224AA138900675534 /* MVPTests.swift */,
+				95730C5424AA32FE00675534 /* MainPresenterTest.swift */,
 				95730C3424AA138900675534 /* Info.plist */,
 			);
 			path = MVPTests;
@@ -126,6 +153,20 @@
 				95730C3F24AA138900675534 /* Info.plist */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		95730C4D24AA177700675534 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				95730C4B24AA13A100675534 /* Comment.swift */,
+				95730C5824ABA86100675534 /* MainPresenter.swift */,
+				95730C1F24AA138700675534 /* MainViewController.swift */,
+				95730C4E24AA17CF00675534 /* MainView.xib */,
+				95730C5A24ABA86D00675534 /* DetailPresenter.swift */,
+				95730C5C24ABACAF00675534 /* DetailView.swift */,
+				95730C5D24ABACAF00675534 /* DetailView.xib */,
+			);
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				95730C2824AA138800675534 /* LaunchScreen.storyboard in Resources */,
+				95730C4F24AA17CF00675534 /* MainView.xib in Resources */,
 				95730C2524AA138800675534 /* Assets.xcassets in Resources */,
 				95730C2324AA138700675534 /* Main.storyboard in Resources */,
+				95730C5F24ABACAF00675534 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95730C2024AA138700675534 /* ViewController.swift in Sources */,
+				95730C2024AA138700675534 /* MainViewController.swift in Sources */,
+				95730C5E24ABACAF00675534 /* DetailView.swift in Sources */,
+				95730C6124ACA9AE00675534 /* Router.swift in Sources */,
 				95730C1C24AA138700675534 /* AppDelegate.swift in Sources */,
 				95730C1E24AA138700675534 /* SceneDelegate.swift in Sources */,
+				95730C5B24ABA86D00675534 /* DetailPresenter.swift in Sources */,
+				95730C5124AA193800675534 /* AssemblyBuilder.swift in Sources */,
+				95730C5724AB9F2500675534 /* NetworkService.swift in Sources */,
+				95730C5924ABA86100675534 /* MainPresenter.swift in Sources */,
+				95730C4C24AA13A100675534 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95730C3324AA138900675534 /* MVPTests.swift in Sources */,
+				95730C6324ADCE2300675534 /* RouterTest.swift in Sources */,
+				95730C5524AA32FE00675534 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
