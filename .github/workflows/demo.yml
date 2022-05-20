@@ -1,6 +1,6 @@
 name: Demo
 #on: [push]
-on: [workflow_dispatch]
+on: workflow_dispatch
 
 jobs:
   Explore-GitHub-Actions:
@@ -17,4 +17,3 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-
