@@ -1,17 +1,15 @@
-name: Tests
+name: Swift
 
-#on: push
-on: workflow_dispatch
+on: [push]
 
 jobs:
-    build:
+  build:
 
     runs-on: macos-latest
 
     steps:
-        - name: Checkout repo for tests
-        - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - name: Build
         run: swift build
-
-        - name: Run tests
+      - name: Run tests
         run: swift test
