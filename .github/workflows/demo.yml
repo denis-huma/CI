@@ -20,3 +20,7 @@ jobs:
 
     - name: Check Runner OS
       run: echo "The operating system on the runner is $RUNNER_OS or ${{ runner.os }}"
+
+    - name: Dump GitHub context
+      id: github_context_step
+      run: echo '${{ toJSON(steps) }}'
