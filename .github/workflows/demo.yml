@@ -23,4 +23,4 @@ jobs:
 
     - name: GitHub context
       id: github_context_step
-      run: echo '${{ toJSON(job) }}'
+      run: echo '${{ toJSON(github) }}'
