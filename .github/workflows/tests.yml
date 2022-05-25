@@ -1,5 +1,5 @@
 name: Run CI
-on: workflow-dispatch
+on: workflow_dispatch
 
 jobs:
   normal_ci:
