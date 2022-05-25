@@ -19,4 +19,4 @@ jobs:
 #      - run: echo "🍏 This job's status is ${{ job.status }}."
 
     - name: Check Runner OS
-      run: echo "The operating system on the runner is $RUNNER_OS :or: ${{ runner.os }}"
+      run: echo "The operating system on the runner is $RUNNER_OS or ${{ runner.os }}"
