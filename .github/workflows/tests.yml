@@ -1,9 +1,9 @@
 name: Run CI
-on: [workflow-dispatch]
+on: workflow-dispatch
 
 jobs:
   normal_ci:
-    runs-on: macos-latest
+    runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v3
       - name: Run tests
