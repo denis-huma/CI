@@ -6,10 +6,91 @@ on:
         branches:
             - '*'
 
+# Run on special branch
+
 #on:
 #  push:
 #    branches:
 #    - develop_branch
+
+
+# We can also define a matrix to define multiple variation for the job.
+# For instance, we can define multiple Xcode versions, or iOS devices.
+
+#strategy:
+#      matrix:
+#        include:
+#          - xcode: "13.2"
+#            ios: "15.2"
+#          - xcode: "13.1"
+#            ios: "15.0"
+#    name: test iOS (${{ matrix.ios }})
+
+
+# run pod install
+# It can also include code dependencies through CocoaPods or Carthage
+# that we need to resolve before testing.
+#    steps:
+#    - uses: actions/checkout@v2
+#
+#    - name: Bundle dependencies
+#      run: bundle install
+#
+#    - name: CocoaPods dependencies
+#      run: bundle exec pod install
+
+
+# Cancelling previous build
+# From cancelling in-progress build,
+# any new commit will stop the previous one.
+#It saves build time, so it saves money.
+
+#  group: build-ios-${{ github.ref }}
+#  cancel-in-progress: true
+
+
+# Environment variables and secrets
+# For a stable build across developers, it can important for all your tests to run
+# on the same environment. For same version of Xcode.
+
+#jobs:
+#  build:
+#    runs-on: macOS-11
+#    env:
+#        XCODE_VERSION: 12.5.1
+#
+#    steps:
+#      - uses: actions/checkout@v2
+#
+#      - name: Select Xcode 12
+#        run: sudo xcode-select --switch /Applications/Xcode_${{ env.XCODE_VERSION }}.app
+
+
+#Some part of the workflow might only make sense if the rest succeeded before.
+#For instance, we could limit code coverage only when tests successfully passed.
+#At the same time, we might want another step to capture the tests report regardless.
+
+#- name: Run coverage
+#  if: success()
+#  run: capture-coverage.sh
+#
+#- name: Publish test report
+#  if: always()
+#  run: publish-report.sh
+
+
+#In this case, job3 would still run regardless of job1 and job2 results.
+#
+#jobs:
+#  job1:
+#  job2:
+#    needs: job1
+#  job3:
+#    if: ${{ always() }}
+#    needs: [job1, job2]
+
+
+
 
 jobs:
   unit_tests:
