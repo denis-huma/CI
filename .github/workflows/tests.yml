@@ -107,7 +107,9 @@ jobs:
       - name: Test
         run: |
           xcodebuild clean test \
+#           -project Texstyle.xcodeproj
             -workspace MVP.xcworkspace \
+            -scheme MVP \
             -destination "platform=iOS Simulator,OS=latest,name=iPhone 11" \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
