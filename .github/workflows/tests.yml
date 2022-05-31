@@ -6,6 +6,10 @@ on:
         branches:
             - '*'
 
+concurrency:
+  group: build-ios-${{ github.ref }}
+  cancel-in-progress: true
+
 # Run on special branch
 
 #on:
