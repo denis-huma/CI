@@ -106,7 +106,7 @@ jobs:
          destination: ${{ matrix.destination }}
       - name: Test
         run: |
-          xcodebuild \
+          xcodebuild clean test \
             -workspace MVP.xcworkspace \
             -destination "platform=iOS Simulator,OS=latest,name=iPhone 11" \
             CODE_SIGN_IDENTITY="" \
