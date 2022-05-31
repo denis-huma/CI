@@ -106,8 +106,8 @@ jobs:
       - name: Build
         run: |
           xcodebuild clean build -project MVP.xcodeproj -scheme MVP -destination 'platform=iOS Simulator,name=iPhone 11' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        env:
-         destination: ${{ matrix.destination }}
+#        env:
+#         destination: ${{ matrix.destination }}
       - name: Test
         run: |
           xcodebuild clean test \
