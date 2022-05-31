@@ -77,7 +77,7 @@ class MainPresenterTest: XCTestCase {
         }
         
         XCTAssertNotEqual(catchComments?.count, 0) // never be nil
-        XCTAssertEqual(catchComments?.count, comments.count)
+        XCTAssertEqual(catchComments?.count, 500)
     }
     
     func testGetFailureComments() {
